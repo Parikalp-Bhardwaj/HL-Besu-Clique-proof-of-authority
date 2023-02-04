@@ -1,0 +1,31 @@
+# Valid TOML config file
+
+data-path="/Node-3/data"
+
+genesis-file="/Node-3/cliqueGenesis.json"
+# Past your enode url
+bootnodes=["<Node-1 Enode URL>"]
+
+
+
+
+
+nat-method="DOCKER"
+host-whitelist=["*"]
+
+# P2P related
+
+p2p-host="127.0.0.1"
+p2p-port=30305
+
+# RPC related
+
+rpc-http-enabled=false
+rpc-http-host="127.0.0.1"
+rpc-http-port=8547
+rpc-http-api=["ADMIN", "CLIQUE", "ETH", "NET", "TXPOOL", "WEB3"]
+rpc-http-cors-origins=["*"]
+
+
+
+

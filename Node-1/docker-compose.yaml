@@ -1,0 +1,14 @@
+version: "3"
+services:
+  node:
+    image: hyperledger/besu:22.7.7
+    # image: hyperledger/besu:latest
+    container_name: "node-1"
+    restart: unless-stopped
+    volumes:
+      - .:/Node-1/
+      - ./data:/Node-1/data/
+    command: --config-file=/Node-1/config.toml
+volumes:
+  .:
+  data:
