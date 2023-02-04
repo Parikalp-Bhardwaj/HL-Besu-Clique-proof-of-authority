@@ -1,7 +1,8 @@
 version: '3'
 services:
   key-node:
-    image: hyperledger/besu:22.1.0-RC5-SNAPSHOT
+    #image: hyperledger/besu:22.1.0-RC5-SNAPSHOT
+    image: hyperledger/besu:latest
     container_name: generator-key
     volumes:
       - .:/usr/app/

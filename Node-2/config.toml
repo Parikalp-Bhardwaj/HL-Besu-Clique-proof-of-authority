@@ -7,27 +7,6 @@ genesis-file="/Node-2/cliqueGenesis.json"
 bootnodes=["<Node-1 Enode URL>"]
 
 
-
-
-
-#network-id=123
-#p2p-port=30304
-#p2p-host="0.0.0.0"
-#p2p-interface="0.0.0.0"
-#rpc-http-host="0.0.0.0"
-
-
-#rpc-ws-enabled=true
-rpc-http-api=["ETH","NET","CLIQUE"]
-
-#rpc-http-enabled=true
-#host-allowlist=["*"]
-
-#rpc-http-cors-origins=["all"]
-
-#rpc-http-port=9047
-
-
 nat-method="DOCKER"
 host-whitelist=["*"]
 p2p-host="127.0.0.1"
@@ -38,6 +17,6 @@ p2p-port=30304
 rpc-http-enabled=false
 rpc-http-host="127.0.0.1"
 rpc-http-port=8546
-#rpc-http-api=["ADMIN", "CLIQUE", "ETH", "NET", "TXPOOL", "WEB3"]
+rpc-http-api=["ADMIN", "CLIQUE", "ETH", "NET", "TXPOOL", "WEB3"]
 rpc-http-cors-origins=["*"]
 
